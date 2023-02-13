@@ -8,7 +8,7 @@ import retrofit2.http.Path
 
 interface RestCountiesApi {
     @GET("name/{name}")
-    fun getCountryName(@Path("name") cityName: String): List<Counrty>
+    suspend fun getCountryName(@Path("name") cityName: String): List<Counrty>
 }
 
 var retrofit = Retrofit.Builder()
