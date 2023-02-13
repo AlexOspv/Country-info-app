@@ -6,7 +6,8 @@ data class Counrty (
     val capital: String,
     val population: Long,
     val area: Long,
-    val languages: List<Language>
+    val languages: List<Language>,
+    val flag: String
 
         )
 
